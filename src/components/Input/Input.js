@@ -10,10 +10,7 @@ const Input = ({error, city, ...props}) => {
         <div className={style.search}>
 
           {/* Diplay of input and icon is changed once a card is shown */}
-            <div className={(typeof city != "undefined") ? (style.show) : style.hide }>
-              <img src={MeteorIcon} alt="meteor" onClick={() => window.location.reload()}/>
-            </div>
-            <div className={(error === true) ? (style.show) : style.hide}>
+            <div className={(typeof city != "undefined") ? (style.show) : style.hide && (error === true) ? (style.show) : style.hide}>
               <img src={MeteorIcon} alt="meteor" onClick={() => window.location.reload()}/>
             </div>
             <input 
