@@ -1,0 +1,29 @@
+
+
+.footer{
+    background: var(--grey-color);
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 131px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer h1{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    color: var(--darkpurple-color);
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+
+.footer h2{
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 3px;
+    color: var(--darkpurple-color);
+}

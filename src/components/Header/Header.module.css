@@ -1,0 +1,40 @@
+
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--secondary-font);
+    padding-top: 30px;
+}
+
+
+h1, h2{
+    margin: 0;
+    color: var(--purple-color);
+}
+
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 15px;
+    letter-spacing:0.3em;
+}
+
+
+h2{
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    opacity: 0.8;
+    padding-top: 5px;
+}
+
+
+img{
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,51 @@
+
+
+.cardWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.error{
+    width: 620px;
+    height: 417px;
+    border-radius: 20px;
+    background-color: var(--darkpurple-color);
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.error img{
+    width: 258px;
+    height: 258px;
+    align-self: center;
+    margin-top: 50px;
+}
+
+
+.error h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white-color);
+    margin: 0;
+}
+
+
+.error p{
+    font-size: 16px;
+    margin: 10px 0px;
+    opacity: .8;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .error{
+        width: 355px;
+    }    
+}

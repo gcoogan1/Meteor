@@ -1,0 +1,41 @@
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrapper{
+    flex-direction: column;
+}
+
+
+.wrapper h3{
+    letter-spacing: 0;
+    opacity: 0.5;
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: bold;
+    color: var(--darkpurple-color);
+    padding-bottom: 15px;
+    padding-top: 60px; 
+}
+
+
+.cities{
+    display: grid;
+    grid-template-columns: 303px 302px;
+    grid-gap: 15px;
+    padding-bottom: 60px;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cities{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }    
+}
