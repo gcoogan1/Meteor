@@ -14,7 +14,7 @@ import ErrorCard from './components/Cards/ErrorCard/ErrorCard';
 
 //WEATHER APP API
 const api = {
-  key: process.env.REACT_APP_APIKEY,
+  key: "da31e4e453bcfcefe2aeefffac20e736",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
