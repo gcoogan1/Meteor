@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 import CitiesCard from './components/Cards/CitiesCard/CitiesCard';
 import CurrentCard from './components/Cards/CurrentCard/CurrentCard';
 import ErrorCard from './components/Cards/ErrorCard/ErrorCard';
-import Loader from './components/Loader/Loader';
+//import Loader from './components/Loader/Loader';
 
 
 
@@ -24,7 +24,7 @@ function App() {
   const [query, setQuery] = useState('');
   const [city, setCity] = useState({})
   const [error, setError] = useState(false)
-  const [loading, setLoading] = useState(true)
+ // const [loading, setLoading] = useState(true)
   const [cities, setCities] = useState([]) 
  
 
@@ -72,7 +72,7 @@ function App() {
     const res = await fetch(`${api.base}group?id=2988507,2643743,2147714,5128581,1261481,&units=imperial&appid=${api.key}`);
     const data = await res.json();
      setCities(data.list)
-     setLoading(false)
+    
     // console.log(data.list)
     
   }
@@ -97,9 +97,7 @@ function App() {
  
   return (
     //* Display Loader if page is not loaded
-    (loading === true) ? (
-      <Loader/>
-    ) : (
+    
      <div >
 
       {/* Header is hidden when current city or error is shown */}
@@ -161,7 +159,7 @@ function App() {
       <Footer/>
     </div>
 
-  ));
+  )
 }
 
 export default App;
