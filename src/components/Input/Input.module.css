@@ -13,7 +13,7 @@ input{
     outline: none;
     background-color: var(--grey-color);
     background-image: url('../../assets/icons-svg/Search\ Icon.svg');
-    background-position: 20px;
+    background-position: 24px;
     background-repeat: no-repeat;
     border-radius: 10px;
     opacity: 1;
