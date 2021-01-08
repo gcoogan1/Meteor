@@ -14,7 +14,7 @@ import Loader from './components/Loader/Loader';
 
 //WEATHER APP API
 const api = {
-  key: "da31e4e453bcfcefe2aeefffac20e736",
+  key: process.env.REACT_APP_API_KEY,
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
