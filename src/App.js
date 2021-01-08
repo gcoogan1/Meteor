@@ -10,7 +10,8 @@ import ErrorCard from './components/Cards/ErrorCard/ErrorCard';
 import Loader from './components/Loader/Loader';
 
 
-
+  // Set our environment to an easier to use name
+  const environment = process.env.NODE_ENV;
 
 //WEATHER APP API
 const api = {
@@ -97,7 +98,7 @@ function App() {
  
   return (
     //* Display Loader if page is not loaded
-    (loading === true) ? (
+    (loading === true || environment !== "production") ? (
       <Loader />
     ) : (
      <div >
