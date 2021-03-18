@@ -55,7 +55,7 @@ function App() {
                 feelsLike: result.main.feels_like,
                 wind: result.wind.speed,
                 main: result.weather[0].main,
-                icon: result.weather[0].icon
+                icon: result.weather[0].icon,
               }
 
               setCity(weather)
@@ -130,6 +130,7 @@ function App() {
             wind={city.wind}
             main={city.main}
             icon={city.icon}  
+           
           />
         ) : (
           null
